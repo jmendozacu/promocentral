@@ -1,0 +1,26 @@
+/**
+ * WARNING: Do not change this file. Your changes will be lost.
+ * 2016-07-01 05:26:14 */
+body.boxed {
+}
+@media (min-width: 768px) {
+    .page-layout-1column .product-info-main, .page-layout-2columns-left .product-info-main, .page-layout-2columns-right .product-info-main, .page-layout-3columns .product-info-main {
+        width: 49%;
+    }
+    .page-layout-1column .product.media, .page-layout-2columns-left .product.media, .page-layout-2columns-right .product.media, .page-layout-3columns .product.media {
+        width: 49%;
+    }
+}
+
+header.page-header.type2 {
+    background-color: #fff;
+    color: #777;
+}
+@media only screen and (max-width: 767px) {
+    .page-header.type2 .nav-toggle:before, .page-header.type2 .block-search .label:before, .page-header.type2 .minicart-wrapper .action.showcart:before, .page-header.type2 .minicart-wrapper .action.showcart.active:before {
+        color: #393F4F;
+    }
+    .page-header.type2 .minicart-wrapper .action.showcart .counter.qty {
+        color: #fff;
+    }
+}
