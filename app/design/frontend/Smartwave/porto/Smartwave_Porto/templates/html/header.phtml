@@ -1,6 +1,40 @@
 <?php
     $header_type = $this->getConfig('porto_settings/header/header_type');
 ?>
+<style type="text/css">
+    @media (min-width: 768px){
+        .page-header.type2{
+            background-image: url('pub/media/porto/page_bg/default/header_bg.png');
+            background-repeat: no-repeat;
+            background-size: auto 125px;
+            background-position: right -11px;
+        }
+        .header.content{
+            top: -30px;
+            margin-bottom: -30px;
+        }
+        strong.logo{
+            margin: 30px 0 30px;
+        }
+        .panel.wrapper{
+            background-color: transparent !important;
+        }
+        .block-search{
+            position: absolute;
+            top: 50%;
+            right: 100px;
+            margin-top: -20px;
+        }
+        .block-search input{
+            border-radius: 10px !important;
+        }
+        .minicart-wrapper .action.showcart .counter.qty{
+            /*width: auto;
+            left: 14px;*/
+        }
+    }
+    
+</style>
 <header class="page-header type<?php echo $header_type; ?>">
 <?php if($header_type == 3 || $header_type == 4 || $header_type == 9): ?>
     <div class="header content">
