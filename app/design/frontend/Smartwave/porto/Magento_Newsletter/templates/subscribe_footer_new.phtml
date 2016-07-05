@@ -1,0 +1,46 @@
+<?php
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<?php
+    $_helper = $this->helper('Smartwave\Porto\Helper\Data');
+    
+    $title = $_helper->getConfig('porto_settings/footer/footer_newsletter_title');//"Be the First to Know";
+    $sub_title = $_helper->getConfig('porto_settings/footer/footer_newsletter_text');//"Get all the latest information on Events,<br>Sales and Offers. Sign up for newsletter today.";
+?>
+<div class="homepage-bar" style="background-color: #ebebeb;color: #363636;padding: 10px 0;border: 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form subscribe col-sm-10 col-sm-offset-1" novalidate action="<?php echo $block->getFormActionUrl() ?>" method="post" data-mage-init='{"validation": {"errorClass": "mage-error"}}' id="newsletter-validate-detail" style="margin-top: 15px">
+                    <div class="form-group">
+                        <div style="text-align:center;font-size:18px"><?php echo __($sub_title); ?></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4" style="padding:0 5px">
+                            <input class="form-control" placeholder="Your Email Address" name="email" type="email" id="footer_newsletter" data-validate="{required:true, 'validate-email':true}"/>
+                        </div>
+                        <div class="col-sm-3" style="padding:0 5px">
+                            <input class="form-control" placeholder="First Name" name="first_name" type="text" id="footer_newsletter" data-validate="{required:true, 'validate-first_name':true}"/>
+                        </div>
+                        <div class="col-sm-3" style="padding:0 5px">
+                            <input class="form-control" placeholder="Last Name" name="last_name" type="text" id="footer_newsletter" data-validate="{required:true, 'validate-last_name':true}"/>
+                        </div>
+                        <div class="col-sm-2" style="padding:0 5px">
+                            <input class="action subscribe primary form-control" title="<?php echo __('Subscribe') ?>" type="submit" value="<?php echo __('Subscribe') ?>" />
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
+                    <div class="form-group">
+                        <div style="text-align:center; text-transform: uppercase; color: #707070;font-size:12px">*All fields are required.</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

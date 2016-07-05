@@ -18,17 +18,11 @@
     <div class="content">
         <p><?php echo __($sub_title); ?></p>
         <label for="footer_newsletter"><?php echo __('Enter your email address') ?></label>
-        <form class="form subscribe"
-            novalidate
-            action="<?php echo $block->getFormActionUrl() ?>"
-            method="post"
-            data-mage-init='{"validation": {"errorClass": "mage-error"}}'
-            id="newsletter-validate-detail">
+        <form class="form subscribe" novalidate action="<?php echo $block->getFormActionUrl() ?>" method="post" data-mage-init='{"validation": {"errorClass": "mage-error"}}' id="newsletter-validate-detail">
             <div class="field newsletter">
                 <label class="label" for="footer_newsletter"><span><?php echo __('Sign Up for Our Newsletter:') ?></span></label>
                 <div class="control">
-                    <input name="email" type="email" id="footer_newsletter"
-                                data-validate="{required:true, 'validate-email':true}"/>
+                    <input name="email" type="email" id="footer_newsletter" data-validate="{required:true, 'validate-email':true}"/>
                 </div>
             </div>
             <div class="actions">

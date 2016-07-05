@@ -43,6 +43,7 @@
             <block class="Smartwave\Porto\Block\Template" name="footer_block" template="html/footer.phtml">
                 <block class="Magento\Store\Block\Switcher" name="footer.store_switcher" template="switch/stores.phtml"/>
                 <block class="Magento\Newsletter\Block\Subscribe" name="footer.newsletter" template="subscribe_footer.phtml"/>
+                <block class="Magento\Newsletter\Block\Subscribe" name="footer.newsletter.new" template="subscribe_footer_new.phtml"/>
             </block>
         </referenceContainer>
     </body>

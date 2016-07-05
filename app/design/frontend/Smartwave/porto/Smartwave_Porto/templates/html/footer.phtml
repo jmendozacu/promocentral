@@ -6,7 +6,7 @@
     if( $footer['footer_top'] ){
 ?>
     <div class="footer-top">
-        <div class="container">
+        <div class="container" style="width: 100% !important;padding-right: 0px;padding-left: 0px;">
             <div class="row">
                 <div class="col-md-12">
                 <?php
@@ -20,6 +20,9 @@
                         if($block){
                             echo '<div class="custom-block">'.$block->toHtml().'</div>';
                         }
+                    }
+                    if( $type == 'newsletter' ){
+                        echo $this->getChildHtml('footer.newsletter.new');
                     }
 
                 ?>
@@ -47,8 +50,17 @@
                 for( $i = 1; $i <= 4; $i++ ){
                     $area = 'footer_middle_column_'.$i;
                     $type = $footer[$area];
+
+                    $pad = "";
+                    if ($i == 1) {
+                        $pad = "padding-left: 0;";
+                    }
+                    if ($i == 4) {
+                        $pad = "padding-right: 0;";
+                    }
+
                     if( $type ){
-                        echo '<div class="col-sm-'.$footer[$area.'_size'].'">';
+                        echo '<div class="col-sm-'.$footer[$area.'_size'].'" style="'.$pad.'">';
                     }
                     if( $type == 'custom' && $footer[$area.'_custom'] ){
                         $block = $this->getLayout()->createBlock('Magento\Cms\Block\Block');
@@ -108,8 +120,8 @@
     }
     if( $footer['footer_bottom'] ){
 ?>
-    <div class="footer-bottom">
-        <div class="container">
+    <div class="footer-bottom" style="padding: 0;">
+        <div class="container" style="text-align: center; padding: 25px 0; border-top: 1px solid #e3e3e3;">
             <?php
             if($footer['footer_logo_src']){
                 
