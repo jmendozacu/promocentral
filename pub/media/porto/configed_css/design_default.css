@@ -1,6 +1,6 @@
 /**
  * WARNING: Do not change this file. Your changes will be lost.
- * 2016-07-04 07:06:26 */
+ * 2016-07-08 01:54:57 */
 
 .theme-color{color:#EEA02C !important;}
 .theme-hover-color:hover{color:#EEA02C !important;}
@@ -49,6 +49,11 @@ a,a:hover, .page-header a, .page-header a:hover, .page-header .panel.header .hea
     }
     .sw-megamenu.navigation.side-megamenu li.level0:hover > a {
         border-top-color:#EEA02C;
+    }
+}
+@media (min-width: 768px){
+    .page-header.type1, .page-header.type2, .page-header.type3, .page-header.type4, .page-header.type5, .page-header.type6, .page-header.type7, .page-header.type8 .header.content, .page-header.type9, .page-header.type10, .page-header.type11 {
+        background-color: #78F5FF;
     }
 }
 @media (min-width: 768px){
@@ -129,4 +134,112 @@ a,a:hover, .page-header a, .page-header a:hover, .page-header .panel.header .hea
 }
 .footer-bottom, .footer-bottom p{
     color:#B9B9B9;
+}
+
+a.action.remind{
+    color: #77b12f;
+}
+
+@media (min-width: 768px){
+    .page-header.type2{
+        background-repeat: no-repeat;
+        background-size: auto 125px;
+        background-position: right -11px;
+    }.header.content{
+        top: -30px;
+        margin-bottom: -30px;
+    }
+    strong.logo{
+        margin: 30px 0 30px;
+    }
+    .panel.wrapper{
+        background-color: transparent !important;
+    }
+    .block-search{
+        position: absolute;
+        top: 50%;
+        right: 110px;
+        margin-top: -16px;
+    }
+    .block-search input{
+        border-radius: 10px !important;
+    }
+    .minicart-wrapper .action.showcart .counter-label{
+        position: initial !important;
+        display: block;
+        width: auto;
+        height: auto;
+        float: right;
+        font-size: 13px;
+    }
+    .page-header.type2 .minicart-wrapper{
+        width: 85px;
+        padding: 1px 8px;
+        background-color: #8fc949;
+        border-radius: 10px;
+        margin-top: -18px;
+    }
+    .page-header.type2 .minicart-wrapper .action.showcart .counter.qty{
+        width: 70px;
+        left: 4px !important;
+    }
+    .minicart-wrapper .action.showcart:before{
+        font-size: 28px !important;
+        color: #fff !important;
+    }
+    .page-header.type2 .minicart-wrapper .action.showcart .counter.qty .counter-number{
+        color: #777 !important;
+    }
+    .page-header.type2 li.greet.welcome{
+        color: #777 !important;
+    }
+
+    /*LOGIN PAGE*/
+    .login-container .block-customer-login{
+        border-right: 1px solid #bdbdbd;
+    }
+    .login-container .block{
+        width: 50%;
+    }
+    .login-container .block.block-customer-login{
+        padding-right: 25px;
+    }
+    .login-container .block.block-new-customer{
+        padding-left: 25px;
+    }
+    .login-container .fieldset > .field > .control{
+        width: 100%;
+    }
+}
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder{
+    /*color: #767575 !important;*/
+}
+.page-header.type2 .block-search input ::-webkit-input-placeholder,
+.page-header.type2 .block-search input :-moz-placeholder,
+.page-header.type2 .block-search input ::-moz-placeholder{
+    font-style: italic;
+}
+
+/*LOGIN*/
+.login-container{
+    color: #464646;
+}
+.login-container .fieldset::after{
+    color: #e12b27;
+}
+.login-container .block .block-title{
+    font-size: 2rem;
+}
+.action.primary{
+    background-color: #8fc949 !important;
+    border-color: #96BB65 !important;
+}
+main .page-title-wrapper{
+    text-align: center
+}
+main .page-title-wrapper .page-title{
+    font-weight: bold;
 }
